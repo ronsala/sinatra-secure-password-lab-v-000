@@ -35,11 +35,12 @@ class ApplicationController < Sinatra::Base
     		# end
 
         # if user.username #&& user.save
-    		# 	redirect "/login"
-    		# else
+        if params[:username] && params[:password]
+    			redirect "/login"
+    		else
     			redirect "/failure"
           # erb :failure
-    		# end
+    		end
         # user.username
   end
 
