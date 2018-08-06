@@ -69,7 +69,7 @@ class ApplicationController < Sinatra::Base
     # else
       redirect to "/failure"
       # erb :failure
-    # end
+    end
   end
 
   get "/failure" do
